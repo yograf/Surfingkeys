@@ -1,3 +1,46 @@
+// an example to create a new mapping `ctrl-y`
+mapkey('<Ctrl-y>', 'Show me the money', function() {
+    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
+});
+
+// an example to replace `u` with `?`, click `Default mappings` to see how `u` works.
+map('?', 'u');
+
+// an example to remove mapkey `Ctrl-i`
+unmap('<Ctrl-i>');
+
+// click `Save` button to make above settings to take effect.
+// set theme
+settings.theme = `
+.sk_theme {
+    background: #000;
+    color: #fff;
+}
+.sk_theme tbody {
+    color: #000;
+}
+.sk_theme input {
+    color: #317ef3;
+}
+.sk_theme .url {
+    color: #38f;
+}
+.sk_theme .annotation {
+    color: #38f;
+}
+
+.sk_theme .focused {
+    background: #aaa;
+}`;
+map('H', 'E')
+map('L', 'R')
+map('b', 'T')
+mapkey(';', ':')
+map('<Backspace>', 'B')
+Hints.characters = 'asdfhjkl'
+
+
+
 # Surfingkeys - Expand your browser with javascript and keyboard.
 
 Surfingkeys is another Chrome extension that provides keyboard-based navigation and control of the web in the spirit of the VIM editor. But it's not for VIM users only, it's for anyone who just needs some more shortcuts to his own functions.
